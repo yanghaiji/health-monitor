@@ -20,6 +20,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.4.4</spring-boot.version>
         <esotericsoftware.version>4.0.2</esotericsoftware.version>
+        <commons-io.version>2.5</commons-io.version>
+        <jakarta.validation.version>2.0.2</jakarta.validation.version>
     </properties>
 
     <dependencies>
@@ -60,7 +62,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.5</version>
+            <version>${commons-io.version}</version>
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
@@ -69,7 +71,7 @@
         <dependency>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
-            <version>2.0.2</version>
+            <version>${jakarta.validation.version}</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
