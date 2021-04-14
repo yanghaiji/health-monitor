@@ -1,0 +1,15 @@
+server:
+  port: 8000
+  maxHttpHeaderSize: 2048
+spring:
+  application:
+    name: health-monitor-server
+  main:
+    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+  profiles:
+    active: dev
+
+health:
+  monitor:
+    server:
+      port: 8888
