@@ -1,0 +1,25 @@
+{
+  "groups": [
+    {
+      "name": "heartbeat",
+      "type": "com.javayh.health.monitor.server.config.HeartBeatProperties",
+      "sourceType": "com.javayh.health.monitor.config.HeartBeatProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name":"health.monitor.server.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.javayh.health.monitor.server.config.HeartBeatProperties",
+      "defaultValue": 8001,
+      "description": "heartbeat server post"
+    },
+    {
+      "name":"health.monitor.server.log.enable",
+      "type": "java.lang.Integer",
+      "sourceType": "com.javayh.health.monitor.server.config.HeartBeatProperties",
+      "defaultValue": true,
+      "description": "health.monitor.server.log.enable"
+    }
+  ]
+}
