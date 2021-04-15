@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "name":  "health",
+      "type": "com.javayh.health.monitor.client.properties.HeartbeatClientProperties",
+      "sourceType": "com.javayh.health.monitor.client.properties.HeartbeatClientProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name":"health.monitor.client.host",
+      "type": "java.lang.String",
+      "sourceType": "com.javayh.health.monitor.client.properties.HeartbeatClientProperties",
+      "defaultValue": "localhost",
+      "description": "heartbeat server host"
+    },
+    {
+      "name":"health.monitor.client.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.javayh.health.monitor.client.properties.HeartbeatClientProperties",
+      "defaultValue": 8001,
+      "description": "heartbeat server post"
+    },
+    {
+      "name":"health.monitor.client.channel-id",
+      "type": "java.lang.Long",
+      "sourceType": "com.javayh.health.monitor.client.properties.HeartbeatClientProperties",
+      "defaultValue": 100,
+      "description": "heartbeat server channel-id"
+    }
+  ,
+    {
+      "name":"health.monitor.client.app-name",
+      "type": "java.lang.String",
+      "sourceType": "com.javayh.health.monitor.client.properties.HeartbeatClientProperties",
+      "description": "heartbeat server app-name"
+    }
+  ]
+}

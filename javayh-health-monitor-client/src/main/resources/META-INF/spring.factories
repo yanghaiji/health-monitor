@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.javayh.health.monitor.client.config.HeartBeatConfig,\
+com.javayh.health.monitor.client.config.SpringUtils,\
+com.javayh.health.monitor.client.heart.HeartbeatClient,\
+com.javayh.health.monitor.client.properties.HeartbeatClientProperties
