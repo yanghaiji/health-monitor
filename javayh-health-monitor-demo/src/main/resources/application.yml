@@ -1,0 +1,18 @@
+server:
+  port: 6062
+spring:
+  application:
+    name: demo-health-monitor
+  main:
+    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+  profiles:
+    active: dev
+
+## 配置检测的
+health:
+  monitor:
+    client:
+      host: localhost
+      port: 8888
+      app-name: demo-health-monitor
+      channel-id: 6062
