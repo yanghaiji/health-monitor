@@ -24,7 +24,6 @@ import javax.annotation.PreDestroy;
  * @author Dylan-haiji
  * @since 2020/3/10
  */
-//@EnableConfigurationProperties(value = HeartbeatClientProperties.class)
 public class HeartbeatClient {
 
 	private final static Logger LOGGER = LoggerFactory.getLogger(HeartbeatClient.class);
