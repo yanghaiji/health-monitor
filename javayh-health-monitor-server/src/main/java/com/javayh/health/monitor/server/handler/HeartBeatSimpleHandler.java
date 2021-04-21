@@ -132,6 +132,7 @@ public class HeartBeatSimpleHandler extends SimpleChannelInboundHandler<MessageB
      */
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        throw new HealthMonitorException(cause.getMessage(), cause);
+        ctx.channel().closeFuture().sync();
+        throw new HealthMonitorException(ctx.name(), cause);
     }
 }

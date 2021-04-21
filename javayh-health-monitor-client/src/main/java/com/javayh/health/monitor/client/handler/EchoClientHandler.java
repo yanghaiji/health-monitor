@@ -2,6 +2,7 @@ package com.javayh.health.monitor.client.handler;
 
 import com.javayh.health.monitor.client.config.SpringUtils;
 import com.javayh.health.monitor.client.entity.MessageBody;
+import com.javayh.health.monitor.client.exception.HealthMonitorClientException;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -39,6 +40,13 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
 		}
 		super.userEventTriggered(ctx, evt);
+	}
+
+	@Override
+	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+		super.exceptionCaught(ctx, cause);
+		ctx.channel().closeFuture().sync();
+		throw new HealthMonitorClientException(ctx.name(),cause);
 	}
 
 	/**

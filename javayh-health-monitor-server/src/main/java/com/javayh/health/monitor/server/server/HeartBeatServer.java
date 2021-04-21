@@ -28,7 +28,6 @@ import java.net.InetSocketAddress;
  */
 @Slf4j
 @Component
-//@EnableConfigurationProperties(value = HeartBeatProperties.class)
 public class HeartBeatServer {
 
 	/**
